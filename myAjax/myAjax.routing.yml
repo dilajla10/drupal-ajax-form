@@ -1,0 +1,12 @@
+# Each route is defined by a machine name, in the form of module_name.route_name.
+myAjax.form:
+    # The path always starts with a leading forward-slash.
+    path: '/admin/myAjax'
+    # Defines the default properties of a route.
+    defaults:
+        # For page callbacks
+        _form: 'Drupal\myAjax\Form\MyAjaxForm'
+        _title: 'My Ajax Form'
+    # Require a permission to access this route.
+    requirements:
+        _permission: 'access administration pages'
